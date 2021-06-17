@@ -113,8 +113,174 @@ if(keyPressed=='40'){
                         if(keypressed=='68'){
                             car_2_right(); 
                             console.log("keyd");
-                            }   
+                            }  
+                            
+       if (car_1_X>700)   {
+
+    console.log("car1");
+
+    document.getElementById("game_status").innerHTML="Car1 wins!";
+       }      
+       
+       else if (car_2_X>700)   {
+
+        console.log("car2");
+    
+        document.getElementById("game_status").innerHTML="Car2 wins!";
+           }   
+           
+        
+    
 
     }
+
+    function car_1_up() {
+
+    if (car_1_Y>=0) {
+
+    car_1_Y=car_1_Y-10; 
+
+    console.log("When up arrow is pressed,X="+car_1_X+",Y="+car_1_Y);
+
+    uploadBackground();
+uploadCar1();
+uploadCar2();
+
+    }   
+
+
+    }
+
+    function car_1_down() {
+
+        if (car_1_Y<=500) {
+    
+        car_1_Y=car_1_Y+10; 
+    
+        console.log("When down arrow is pressed,X="+car_1_X+",Y="+car_1_Y);
+    
+        uploadBackground();
+    uploadCar1();
+    uploadCar2();
+    
+        }   
+    
+    
+        }
+
+        function car_1_left() {
+
+            if (car_1_X>=0) {
+        
+            car_1_X=car_1_X-10; 
+        
+            console.log("When left arrow is pressed,X="+car_1_X+",Y="+car_1_Y);
+        
+            uploadBackground();
+        uploadCar1();
+        uploadCar2();
+        
+            }   
+        
+        
+            }
+
+            function car_1_right() {
+
+                if (car_1_X<=700) {
+            
+                car_1_X=car_1_X+10; 
+            
+                console.log("When right arrow is pressed,X="+car_1_X+",Y="+car_1_Y);
+            
+                uploadBackground();
+            uploadCar1();
+            uploadCar2();
+            
+                }   
+            
+            
+                }
+
+
+
+
+                function car_2_up() {
+
+                    if (car_2_Y>=0) {
+                
+                    car_2_Y=car_2_Y-10; 
+                
+                    console.log("When up arrow is pressed,X="+car_2_X+",Y="+car_2_Y);
+                
+                    uploadBackground();
+                uploadCar1();
+                uploadCar2();
+                
+                    }   
+                
+                
+                    }
+                
+                    function car_2_down() {
+                
+                        if (car_2_Y<=500) {
+                    
+                        car_2_Y=car_2_Y+10; 
+                    
+                        console.log("When down arrow is pressed,X="+car_2_X+",Y="+car_2_Y);
+                    
+                        uploadBackground();
+                    uploadCar1();
+                    uploadCar2();
+                    
+                        }   
+                    
+                    
+                        }
+                
+                        function car_2_left() {
+                
+                            if (car_2_X>=0) {
+                        
+                            car_2_X=car_2_X-10; 
+                        
+                            console.log("When left arrow is pressed,X="+car_2_X+",Y="+car_2_Y);
+                        
+                            uploadBackground();
+                        uploadCar1();
+                        uploadCar2();
+                        
+                            }   
+                        
+                        
+                            }
+                
+                            function car_2_right() {
+                
+                                if (car_2_X<=700) {
+                            
+                                car_2_X=car_2_X+10; 
+                            
+                                console.log("When right arrow is pressed,X="+car_2_X+",Y="+car_2_Y);
+                            
+                                uploadBackground();
+                            uploadCar1();
+                            uploadCar2();
+                            
+                                }   
+                            
+                            
+                                }
+                
+
+                
+                
+            
+        
+    
+
+
+    
 
     
